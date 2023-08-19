@@ -1,13 +1,72 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+img {
+  overflow: auto;
+  overflow-clip-margin: unset;
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.chores ul li {
+  list-style-type: none;
+}
+
+.choresList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.choresList div p {
+  padding-left: 10px;
+}
+
+.choresList div h3 {
+  text-align: center;
+}
+
+.choresList div img {
+  padding-left: 10px;
+}
+
+.choresList li a {
+  text-decoration: none;
+  color: black;
+}
+
+.chores ul li div {
+  border-radius: 25px;
+  border: 2px solid #73ad21;
+  padding: 20px;
+  margin: 10px;
+  width: 270px;
+  height: 400px;
+}
+
+.choreContainer {
+  position: relative;
+}
+
+.choreFooter {
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+}
+
+.newActivities div label {
+  display: -webkit-inline-box;
+  width: 120px;
+  margin-bottom: 10px;
 }
